@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class PostMedium extends Component {
+class Footer extends Component {
     render() {
         
     }
 }
 
-export default PostMedium;
+export default Footer;

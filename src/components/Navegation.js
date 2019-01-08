@@ -1,15 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import AppBar from '@material-ui/core/AppBar'
+import Typography from '@material-ui/core/Typography'
+import Toolbar from '@material-ui/core/Toolbar'
 
-class Navegation extends Component {
-    render() {
-        return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">                
-                <a className="navbar-brand" href="/">Nearshore Academy</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>    
-        );
-    }
+const Navegation = () => {
+    return (
+        <div>
+            <AppBar position='static' color="primary">
+                <Toolbar>
+                    <Typography variant="title" color="inherit">
+                        Nearshore Academy
+                    </Typography>                    
+                </Toolbar>
+            </AppBar>
+        </div>
+    );
 }
+
+
 export default Navegation;
