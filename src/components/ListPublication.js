@@ -30,7 +30,7 @@ class ListPublication extends Component{
                         <h1 style={{padding:24}} 
                         margin='normal'>Nearshore Code - Medium Stories
                         </h1>
-                        <Grid container spacing={24}style={{padding: 24}}>
+                        <Grid container spacing={24}style={{padding: 24, height:'100%', width:'100%' }}>
                             {this.state.publications.map(currentPublication => (
                                 <Grid item key={currentPublication.guid}  xs={12} sm={6} lg={4} xl={3}>
                                     <Publication publication={currentPublication}>
