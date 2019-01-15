@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import AppBar from '@material-ui/core/AppBar'
-import Typography from '@material-ui/core/Typography'
 import Toolbar from '@material-ui/core/Toolbar'
 import { Link } from "react-router-dom";
+import logo from './logo.png';
 
 class Navegation extends Component {
     render() {
@@ -10,9 +10,7 @@ class Navegation extends Component {
         <div>
             <AppBar position='static' color="primary">
                 <Toolbar>
-                    <Typography variant="title" color="inherit">
-                    <Link to="/" >Nearshore Academy</Link>
-                    </Typography>                    
+                <Link to="/" ><img src={logo} width={250} alt="My logo" /></Link>
                 </Toolbar>
             </AppBar>
         </div>

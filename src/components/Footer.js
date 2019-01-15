@@ -38,7 +38,7 @@ class Footer extends Component {
           <Grid container justify="center">
             <Toolbar>
               <Typography variant="subtitle2" color="inherit">
-                Nearshore Academy © All rights reserved. 2018
+                Nearshore Academy © All rights reserved. 2019
               </Typography>
             </Toolbar>
           </Grid>

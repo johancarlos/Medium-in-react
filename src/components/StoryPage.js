@@ -5,8 +5,6 @@ import Grid from "@material-ui/core/Grid";
 const StoryPage = props => {
   console.log(props);
 
-  //let title = props.location.search;
-
   return (
     <Grid
       style={{ paddingTop: 50 }}
@@ -15,10 +13,9 @@ const StoryPage = props => {
       direction="column"
       align="center"
     >
-      <Grid item xs={8} sm={8} lg={8} xl={8}>
-        {/* <h1 dangerouslySetInnerHTML={{ __html: title }} /> */}
+      <Grid item xs={12}>
         <div 
-          dangerouslySetInnerHTML={{ __html: props.location.state.description }}
+          dangerouslySetInnerHTML={{ __html: '<span style="text-align: center; ">' + props.location.state.description + '<span>' }}
         />
       </Grid>
     </Grid>
