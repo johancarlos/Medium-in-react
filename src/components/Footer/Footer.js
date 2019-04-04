@@ -10,14 +10,20 @@ class Footer extends Component {
   render() {
     return (
       <div>
-        <AppBar position="static" color="primary">       
+        <AppBar position="static" color="primary">
           <Grid container spacing={24}>
             <Grid item xs={8}>
               <Toolbar>
                 <Button href="https://www.nearshorecode.com/"  variant="h5" color="inherit">
-                  Nearshore Code Website
+                  NEARSHORECODE WEBSITE
                 </Button>
               </Toolbar>
+              <p>
+              Nearshore Code is a software development company located in South America, that delivers high quality solutions. We operate without any restriction of time, distance, culture or language.
+              </p>
+              <p>
+              We have the expertise and commitment to meet our customer’s needs, no matter the complexity of the challenge or technology required.
+              </p>
             </Grid>
 
             <Grid item xs={4}>

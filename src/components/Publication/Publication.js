@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import Card from "@material-ui/core/Card";
+
+import { Card, Icon, Image } from 'semantic-ui-react'
+
+
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
@@ -25,25 +28,26 @@ const Publication = props => {
     <div>
       {props.publication ? (
         <Card>
+        <Card.Content>
           <CardMedia
             style={{ height: 0, paddingTop: "56.25%" }}
             image={thumbnail}
           />
-          <CardContent>
-            <Typography gutterBottom variant="headline" component="h2">
+
               <Link
                 to={{
                   pathname: `/stories/${id}`,
                   state: { description }
                 }}
               >
-                {title}
+              {title}
               </Link>
-            </Typography>
-            <Typography component="p">
-              {author} - {date}
-            </Typography>
-          </CardContent>
+
+            <Card.Meta>
+              <span className='date'>{author} - {date}</span>
+            </Card.Meta>
+
+          </Card.Content>
         </Card>
       ) : null}
     </div>

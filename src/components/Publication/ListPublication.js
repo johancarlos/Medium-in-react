@@ -27,7 +27,7 @@ class ListPublication extends Component{
             <div>
                 {this.state.publications?(
                     <div>
-                        <h1 style={{padding:24}} 
+                        <h1 style={{padding:24}}
                         margin='normal'>Nearshore Code - Medium Stories
                         </h1>
                         <Grid container spacing={24}style={{padding: 24, height:'100%', width:'100%' }}>
@@ -38,10 +38,10 @@ class ListPublication extends Component{
                                 </Grid>
                             ))}
                         </Grid>
-                    </div> 
-                ) : "No publications found" }              
+                    </div>
+                ) : "No publications found" }
             </div>
         );
-    }  
+    }
 }
 export default ListPublication
