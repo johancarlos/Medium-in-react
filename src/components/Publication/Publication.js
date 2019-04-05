@@ -1,13 +1,6 @@
 import React, { Component } from "react";
-
-import { Card, Icon, Image } from 'semantic-ui-react'
-
-
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Typography from "@material-ui/core/Typography";
+import { Card, Icon, Image } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
-
 const Publication = props => {
   const {
     thumbnail,
@@ -25,15 +18,12 @@ const Publication = props => {
   const date = arrayDate[0];
 
   return (
-    <div>
+    <div >
       {props.publication ? (
-        <Card>
-        <Card.Content>
-          <CardMedia
-            style={{ height: 0, paddingTop: "56.25%" }}
-            image={thumbnail}
-          />
-
+        <Card >
+          <Image src={thumbnail} />
+            <Card.Content>
+              <Card.Header>
               <Link
                 to={{
                   pathname: `/stories/${id}`,
@@ -42,11 +32,10 @@ const Publication = props => {
               >
               {title}
               </Link>
-
+            </Card.Header>
             <Card.Meta>
               <span className='date'>{author} - {date}</span>
             </Card.Meta>
-
           </Card.Content>
         </Card>
       ) : null}

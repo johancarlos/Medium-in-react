@@ -5,16 +5,9 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import StoryPage from "./components/Publication/StoryPage";
 
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-import muiTheme from './theme/muiTheme';
-
-
-
 class App extends Component {
   render() {
     return (
-
-      <MuiThemeProvider theme={muiTheme}>
        <Router>
         <div>
           <Navigation />
@@ -23,7 +16,6 @@ class App extends Component {
           <Footer />
         </div>
       </Router>
-      </MuiThemeProvider>
     );
   }
 }

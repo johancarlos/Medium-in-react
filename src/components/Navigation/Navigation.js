@@ -1,21 +1,21 @@
-import React, { Component } from 'react'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
+import React, { Component } from "react";
+import { Image, Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import logo from '../../Images/nearshorelogo.png';
 
-class Navigation extends Component {
-    render() {
-    return (
-        <div>
-            <AppBar position='static' color="primary">
-                <Toolbar>
-                <Link to="/" ><img src={logo} width={250} alt="My logo" /></Link>
-                </Toolbar>
-            </AppBar>
-        </div>
-    );
-}
-}
 
+class Navigation extends Component {
+  render() {
+    return (
+      <div>
+        <Menu style={{padding:20}} inverted>
+         <Link to="/" >
+            <Image src={logo} width={250} alt="My logo" />
+        </Link>
+
+        </Menu>
+      </div>
+    );
+  }
+}
 export default Navigation;

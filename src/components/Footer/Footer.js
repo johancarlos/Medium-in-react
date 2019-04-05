@@ -1,54 +1,50 @@
 import React, { Component } from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Typography from "@material-ui/core/Typography";
-import Toolbar from "@material-ui/core/Toolbar";
-import Grid from "@material-ui/core/Grid";
-import Button from '@material-ui/core/Button';
+import './Fotter.css';
+import { Card, Icon, Image, Grid, Segment, Menu , Button } from 'semantic-ui-react';
 
 
 class Footer extends Component {
   render() {
     return (
       <div>
-        <AppBar position="static" color="primary">
-          <Grid container spacing={24}>
-            <Grid item xs={8}>
-              <Toolbar>
-                <Button href="https://www.nearshorecode.com/"  variant="h5" color="inherit">
+        <Grid columns={2} divided>
+            <Grid.Row stretched color='black'>
+              <Grid.Column width={12}>
+                <Segment inverted>
+                <Button href="https://www.nearshorecode.com/" secondary >
                   NEARSHORECODE WEBSITE
                 </Button>
-              </Toolbar>
-              <p>
-              Nearshore Code is a software development company located in South America, that delivers high quality solutions. We operate without any restriction of time, distance, culture or language.
-              </p>
-              <p>
-              We have the expertise and commitment to meet our customer’s needs, no matter the complexity of the challenge or technology required.
-              </p>
-            </Grid>
+                </Segment>
+                <Segment inverted >
+                  <p>
+                  Nearshore Code is a software development company located in South America, that delivers high quality solutions. We operate without any restriction of time, distance, culture or language.
+                  </p>
+                  <p>
+                  We have the expertise and commitment to meet our customer’s needs, no matter the complexity of the challenge or technology required.
+                  </p>
+                </Segment>
+              </Grid.Column>
+              <Grid.Column width={4} style={{paddingTop:24}}>
+                <h3>CONTACTANOS</h3>
+                  <span>
+                  Phone: 591-79328832 | 591-44025483
+                  </span>
+                  <span>
+                  Email: hello@nearshorecode.com
+                  </span>
+              </Grid.Column>
 
-            <Grid item xs={4}>
-              <Toolbar>
-                <Typography variant="h6" color="inherit">
-                  CONTACTANOS
-                </Typography>
-              </Toolbar>
-              <Typography color="inherit">
-                Phone: 591-79328832 | 591-44025483
-              </Typography>
-              <Typography color="inherit">
-                Email: hello@nearshorecode.com
-              </Typography>
-            </Grid>
+            </Grid.Row>
           </Grid>
-
-          <Grid container justify="center">
-            <Toolbar>
-              <Typography variant="subtitle2" color="inherit">
-                Nearshore Academy © All rights reserved. 2019
-              </Typography>
-            </Toolbar>
+          <Grid class="grid-footer">
+            <Grid.Row color='black' textAlign='center'>
+              <Grid.Column>
+                <Segment inverted>
+                  <span class="span-footer">Nearshore Academy © All rights reserved. 2019 </span>
+                </Segment>
+              </Grid.Column>
+            </Grid.Row>
           </Grid>
-        </AppBar>
       </div>
     );
   }

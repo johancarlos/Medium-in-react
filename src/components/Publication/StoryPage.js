@@ -1,10 +1,10 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
-
+import { Grid } from 'semantic-ui-react'
 
 const StoryPage = props => {
   console.log(props);
 const name = props.title;
+
   return (
     <div>
       <Grid
@@ -14,8 +14,7 @@ const name = props.title;
         direction="column"
         align="center"
       >
-        <Grid item xs={12}>
-
+        <Grid>
           <div
             dangerouslySetInnerHTML={{ __html: '<span style="text-align: center; ">' + '<h1>' + name + '</h1>' + props.location.state.description + '<span>' }}
           />
