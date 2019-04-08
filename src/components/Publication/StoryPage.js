@@ -3,20 +3,17 @@ import { Grid } from 'semantic-ui-react'
 
 const StoryPage = props => {
   console.log(props);
-const name = props.title;
+console.log(props.title);
 
   return (
     <div>
       <Grid
-        style={{ paddingTop: 50 }}
-        container
-        spacing={24}
+        style={{ padding: 50 }}
         direction="column"
-        align="center"
       >
         <Grid>
           <div
-            dangerouslySetInnerHTML={{ __html: '<span style="text-align: center; ">' + '<h1>' + name + '</h1>' + props.location.state.description + '<span>' }}
+            dangerouslySetInnerHTML={{ __html: '<span style="text-align: center; ">' + '<h1>' + props.title + '</h1>' + props.location.state.description + '<span>' }}
           />
         </Grid>
       </Grid>

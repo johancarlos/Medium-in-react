@@ -19,23 +19,22 @@ class ListPublication extends Component{
             this.setState({ publications: publications})
         });
     }
-
     render (){
         const publications = this.state.publications
-        // console.log(publications)
         return(
-            <div style={{paddingTop:24}}>
+            <div>
                 {this.state.publications?(
-                    <div>
-                        <h1 style={{padding:24}}
-                        margin='normal'>Nearshore Code - Medium Stories
+                    <div >
+                        <h1 style={{padding:24}}>Nearshore Code - Medium Stories
                         </h1>
-                        <Grid container style={{padding: 24 }}>
+                        <Grid columns={5}  relaxed='very'>
                             {this.state.publications.map(currentPublication => (
-                                <Grid  style={{padding: 14 }}>
+                              <Grid.Column >
+                                <Grid style={{margin:0}} >
                                     <Publication publication={currentPublication}>
                                     </Publication>
                                 </Grid>
+                              </Grid.Column>
                             ))}
                         </Grid>
                     </div>

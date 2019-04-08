@@ -20,7 +20,7 @@ const Publication = props => {
   return (
     <div >
       {props.publication ? (
-        <Card >
+        <Card>
           <Image src={thumbnail} />
             <Card.Content>
               <Card.Header>
