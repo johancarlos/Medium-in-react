@@ -17,11 +17,12 @@ const Publication = props => {
   const arrayDate = pubDate.split(" ");
   const date = arrayDate[0];
 
+
   return (
-    <div >
+    <div>
       {props.publication ? (
-        <Card>
-          <Image src={thumbnail} />
+        <Card style={{width:180}, {height:270}}>
+          <Image src={thumbnail} style={{height:160}}/>
             <Card.Content>
               <Card.Header>
               <Link
@@ -39,6 +40,7 @@ const Publication = props => {
           </Card.Content>
         </Card>
       ) : null}
+
     </div>
   );
 };

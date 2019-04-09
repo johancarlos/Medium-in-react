@@ -27,11 +27,11 @@ class ListPublication extends Component{
                     <div >
                         <h1 style={{padding:24}}>Nearshore Code - Medium Stories
                         </h1>
-                        <Grid columns={5}  relaxed='very'>
+                        <Grid columns={5}  relaxed='very'style={{margin:0}}>
                             {this.state.publications.map(currentPublication => (
                               <Grid.Column >
-                                <Grid style={{margin:0}} >
-                                    <Publication publication={currentPublication}>
+                                <Grid style={{margin:0}}>
+                                    <Publication publication={currentPublication} >
                                     </Publication>
                                 </Grid>
                               </Grid.Column>

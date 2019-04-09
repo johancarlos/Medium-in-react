@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import './Fotter.css';
-import { Image, Grid, Segment, Menu , Button } from 'semantic-ui-react';
+import { Grid, Segment, Button } from 'semantic-ui-react';
 
 
 class Footer extends Component {
   render() {
     return (
-      <div style={{paddingTop:25}}>
+      <div style={{paddingTop:50}}>
         <Grid columns={2} divided >
             <Grid.Row stretched color={"black"}>
               <Grid.Column width={12} >
