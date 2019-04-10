@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { Image, Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import logo from '../../Images/logo_nc.png';
+import logo from '../../Images/logo.png';
 
-const principalColor = '#333333'
 const color1 = 'black'
 
 class Navigation extends Component {

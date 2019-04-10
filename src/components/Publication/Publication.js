@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Card, Icon, Image } from 'semantic-ui-react';
+import React from "react";
+import { Card, Image } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 const Publication = props => {
   const {
@@ -16,8 +16,6 @@ const Publication = props => {
 
   const arrayDate = pubDate.split(" ");
   const date = arrayDate[0];
-
-
   return (
     <div>
       {props.publication ? (
@@ -29,8 +27,7 @@ const Publication = props => {
                 to={{
                   pathname: `/stories/${id}`,
                   state: { description }
-                }}
-              >
+                }}>
               {title}
               </Link>
             </Card.Header>

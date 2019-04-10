@@ -20,7 +20,6 @@ class ListPublication extends Component{
         });
     }
     render (){
-        const publications = this.state.publications
         return(
             <div>
                 {this.state.publications?(
