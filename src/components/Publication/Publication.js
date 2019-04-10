@@ -19,7 +19,7 @@ const Publication = props => {
   return (
     <div>
       {props.publication ? (
-        <Card style={{width:180}, {height:270}}>
+        <Card style={{width:300, height:270}}>
           <Image src={thumbnail} style={{height:160}}/>
             <Card.Content>
               <Card.Header>

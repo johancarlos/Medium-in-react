@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { Grid } from  'semantic-ui-react'
+import { Grid, Responsive } from  'semantic-ui-react'
 import Publication from './Publication.js'
 
 const url = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/nearshore-code`
@@ -26,16 +26,16 @@ class ListPublication extends Component{
                     <div >
                         <h1 style={{padding:24}}>Nearshore Code - Medium Stories
                         </h1>
-                        <Grid columns={5}  relaxed='very'style={{margin:0}}>
+                        <Responsive as={Grid} columns={5} minWidth={200}  relaxed='very'style={{margin:0}}>
                             {this.state.publications.map(currentPublication => (
-                              <Grid.Column >
-                                <Grid style={{margin:0}}>
+                              <Grid.Column>
+                                  <Grid style={{margin:0}}>
                                     <Publication publication={currentPublication} >
                                     </Publication>
-                                </Grid>
+                                    </Grid>
                               </Grid.Column>
                             ))}
-                        </Grid>
+                        </Responsive>
                     </div>
                 ) : "No publications found" }
             </div>

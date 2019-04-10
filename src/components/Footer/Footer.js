@@ -3,7 +3,7 @@ import './Fotter.css';
 import { Grid, Segment, Button, Image, List } from 'semantic-ui-react';
 import logoFb from '../../Images/logoFb.png';
 import logoTw from '../../Images/logoTw.png';
-import logoIn from '../../Images/logoLn.png';
+import logoLn from '../../Images/logoLn.png';
 
 class Footer extends Component {
   render() {
@@ -33,14 +33,14 @@ class Footer extends Component {
                     </List.Item>
                     <List.Item>
                     <a href="https://www.linkedin.com/company/nearshore-code">
-                    <Image src={logoIn} width={40} alt="My logo" /></a>
+                    <Image src={logoLn} width={40} alt="My logo" /></a>
                     </List.Item>
                   </List>
                 </Segment>
               </Grid.Column>
-              <Grid.Column width={4} style={{paddingTop:24}} >
+              <Grid.Column width={4} style={{paddingTop:25}} >
                 <h3>CONTACTANOS</h3>
-                  <span>Phone: 591-79328832 | 591-44025483</span>
+                  <span  >Phone: 591-79328832 | 591-44025483</span>
                   <span>Email: hello@nearshorecode.com</span>
               </Grid.Column>
             </Grid.Row>
