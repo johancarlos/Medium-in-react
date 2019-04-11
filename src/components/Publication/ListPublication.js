@@ -23,7 +23,7 @@ class ListPublication extends Component{
         return(
             <div>
                 {this.state.publications?(
-                    <div >
+                    <div>
                         <h1 style={{padding:24}}>Nearshore Code - Medium Stories
                         </h1>
                         <Responsive as={Grid} columns={5} minWidth={200}  relaxed='very'style={{margin:0}}>

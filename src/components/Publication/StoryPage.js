@@ -1,36 +1,24 @@
-import React, {Component} from "react";
-import axios from 'axios'
-import Story from "./Story"
+import React from "react";
+import { Grid } from 'semantic-ui-react'
 
-const url = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/nearshore-code`
 
-class StoryPage extends Component {
-  state ={
-    stories: []
-  }
-  constructor() {
-    super()
-    this.getStory()
-  }
-  getStory =()=>{
-    axios.get(url).then((response)=>{
-      const stories = response.data.items
-      this.setState({stories: stories})
-    });
-  }
-  render(){
-    return(
+const StoryPage = props => {
+  console.log(props.title);
+const name = props.title;
+    return (
       <div>
-        {this.state.stories?(
-          <div>
-              {this.state.stories.map(currentStory=>(
-                <Story story={currentStory}>
-                </Story>
-              ))}
-          </div>
-        ) : "No Story found" }
+        <Grid
+          style={{ paddingTop: 50 }}
+          direction="column"
+          align="center"
+        >
+          <Grid style={{ margin: 20 }}>
+            <div
+              dangerouslySetInnerHTML={{ __html: '<span style="text-align: center; ">' + props.location.state.description + '<span>' }}
+            />
+          </Grid>
+        </Grid>
       </div>
     );
-  }
-}
-export default StoryPage;
+};
+  export default StoryPage;
