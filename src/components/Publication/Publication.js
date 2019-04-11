@@ -10,7 +10,6 @@ const Publication = props => {
     pubDate,
     description
   } = props.publication;
-
   const arrayID = guid.split("/");
   const id = arrayID[arrayID.length - 1];
 
@@ -37,7 +36,6 @@ const Publication = props => {
           </Card.Content>
         </Card>
       ) : null}
-
     </div>
   );
 };

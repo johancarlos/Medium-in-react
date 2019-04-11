@@ -4,7 +4,6 @@ import { Grid } from 'semantic-ui-react'
 
 const StoryPage = props => {
   console.log(props.title);
-const name = props.title;
     return (
       <div>
         <Grid
